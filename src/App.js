@@ -1,10 +1,13 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import ProgrammersState from './components/ProgrammersState/ProgrammersState';
 
 const App = () => {
 	return (
-		<div>
+		<Container>
 			<h2>this is react</h2>
-		</div>
+			<ProgrammersState />
+		</Container>
 	);
 };
 

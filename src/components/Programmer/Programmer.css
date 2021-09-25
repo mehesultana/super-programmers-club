@@ -4,6 +4,9 @@
 	background-color: #c5d1c5;
 	border: 5px solid #6d5e3d;
 }
+.programmers img {
+	width: 100%;
+}
 
 .hire-btn {
 	background-color: goldenrod;

@@ -5,7 +5,7 @@ import './Programmer.css';
 
 const Programmer = (props) => {
 	console.log(props.programmer);
-	const { first_name, last_name, ProgrammerPhoto, position, salary } = props.programmer;
+	const { first_name, last_name, ProgrammerPhoto, position, salary, gender, done } = props.programmer;
 	return (
 		<Col>
 			<Card className="programmers">
@@ -14,8 +14,10 @@ const Programmer = (props) => {
 					<Card.Title>
 						{first_name} {last_name}
 					</Card.Title>
-					<Card.Text>Job : {position} </Card.Text>
-					<Card.Text>Demand : ${salary} </Card.Text>
+					<Card.Text>Job: {position} </Card.Text>
+					<Card.Text>Gender: {gender} </Card.Text>
+					<Card.Text>What he has done: {done} </Card.Text>
+					<Card.Text>Demand: ${salary} </Card.Text>
 					<Button className="hire-btn" variant="outline-secondary" size="sm">
 						Hire Now
 					</Button>

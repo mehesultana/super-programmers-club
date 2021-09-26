@@ -1,8 +1,11 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = (props) => {
 	// console.log(props.cart);
+	const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
 	const { cart } = props;
 	let total = 0;
 	let added = [];
@@ -15,7 +18,7 @@ const Cart = (props) => {
 
 	return (
 		<div>
-			<h2>My Cart</h2>
+			<h2>My Cart {cartIcon}</h2>
 			<hr />
 			<h4>Total Add: {props.cart.length}</h4>
 			<h4>total: ${total}</h4>

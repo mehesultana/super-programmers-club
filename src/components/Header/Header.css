@@ -23,7 +23,13 @@ h3 {
 	margin-right: 20px;
 	padding: 5px;
 	font-size: 20px;
+	margin-left: 70px;
 }
 .header nav a:hover {
-	background-color: rgb(202, 191, 140);
+	background-color: rgb(140, 177, 202);
+}
+.icon {
+	color: aliceblue;
+	margin-right: 300px;
+	width: 50px;
 }

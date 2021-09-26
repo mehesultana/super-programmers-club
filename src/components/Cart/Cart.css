@@ -4,3 +4,14 @@ h2 {
 h4 {
 	color: rgb(10, 10, 168);
 }
+.hire {
+	background-color: rgb(238, 184, 48);
+	width: 150px;
+	height: 30px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.hire:hover {
+	background-color: bisque;
+}

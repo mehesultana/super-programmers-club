@@ -3,6 +3,7 @@ import './Cart.css';
 import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import Button from '@restart/ui/esm/Button';
 
 const Cart = (props) => {
 	// console.log(props.cart);
@@ -35,6 +36,9 @@ const Cart = (props) => {
 					</tr>
 				</tbody>
 			</Table>
+			<Button className="hire" variant="outline-secondary" size="sm">
+				Hire
+			</Button>
 		</div>
 	);
 };

@@ -4,7 +4,7 @@ import { Card, Col } from 'react-bootstrap';
 import './Programmer.css';
 
 const Programmer = (props) => {
-	console.log(props.programmer);
+	// console.log(props.programmer);
 	const { name, ProgrammerPhoto, position, demand, gender, done } = props.programmer;
 	// const gitIcon = <FontAwesomeIcon icon={faGithubAlt} />;
 

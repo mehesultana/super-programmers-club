@@ -20,7 +20,6 @@ const ProgrammersState = () => {
 
 	return (
 		<div>
-			<h1>Create your own team</h1>
 			<Row xs={1} md={3} className="g-4">
 				<Col>
 					<Cart cart={cart}></Cart>

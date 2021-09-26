@@ -1,0 +1,29 @@
+.header {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.logo {
+	height: 150px;
+	width: 400px;
+}
+h1 {
+	color: rgb(67, 107, 134);
+}
+h3 {
+	color: rgb(72, 191, 228);
+}
+.header nav {
+	background-color: rgb(67, 107, 134);
+	line-height: 40px;
+	margin-bottom: 50px;
+}
+.header nav a {
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+	padding: 5px;
+	font-size: 20px;
+}
+.header nav a:hover {
+	background-color: rgb(202, 191, 140);
+}

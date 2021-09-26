@@ -54,6 +54,7 @@ const ProgrammersData = [
 		ProgrammerPhoto: 'https://i2.wp.com/www.rankred.com/wp-content/uploads/2019/07/Linus-Torvalds.jpg?w=700&ssl=1',
 	},
 	{
+		key: 'B015WXL0C6',
 		id: 7,
 		name: 'Bjarne Stroustrup',
 		done: 'C++ language',

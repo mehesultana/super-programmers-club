@@ -12,7 +12,7 @@ const ProgrammersState = () => {
 
 	useEffect(() => {
 		setProgrammers(fakeData);
-		// console.log(programmers);
+		//console.log(programmers);
 	}, [programmers]);
 
 	const handleAddToCart = (programmer) => {
@@ -38,9 +38,10 @@ const ProgrammersState = () => {
 				<Row xs={2} md={3} className="g-4 ">
 					{programmers.map((pg) => {
 						// console.log(pg.first_name);
+						const { id } = pg;
 						return (
-							<Fragment>
-								<Programmer key={programmers.id} programmer={pg} handleAddToCart={handleAddToCart}></Programmer>
+							<Fragment key={id}>
+								<Programmer programmer={pg} handleAddToCart={handleAddToCart}></Programmer>
 							</Fragment>
 						);
 					})}

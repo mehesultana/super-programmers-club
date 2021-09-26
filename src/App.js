@@ -5,7 +5,6 @@ import ProgrammersState from './components/ProgrammersState/ProgrammersState';
 const App = () => {
 	return (
 		<Container>
-			<h2>this is react</h2>
 			<ProgrammersState />
 		</Container>
 	);

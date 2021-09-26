@@ -5,20 +5,18 @@ import './Programmer.css';
 
 const Programmer = (props) => {
 	console.log(props.programmer);
-	const { first_name, last_name, ProgrammerPhoto, position, salary, gender, done } = props.programmer;
+	const { name, ProgrammerPhoto, position, demand, gender, done } = props.programmer;
 	return (
 		<Col>
 			<Card className="programmers">
 				<Card.Img variant="top" src={ProgrammerPhoto} />
 				<Card.Body>
-					<Card.Title>
-						{first_name} {last_name}
-					</Card.Title>
+					<Card.Title>{name}</Card.Title>
 					<Card.Text>Job: {position} </Card.Text>
 					<Card.Text>Gender: {gender} </Card.Text>
 					<Card.Text>What he has done: {done} </Card.Text>
-					<Card.Text>Demand: ${salary} </Card.Text>
-					<Button className="hire-btn" variant="outline-secondary" size="sm">
+					<Card.Text>Demand: ${demand} </Card.Text>
+					<Button onClick={() => props.handleAddToCart(props.programmer)} className="hire-btn" variant="outline-secondary" size="sm">
 						Hire Now
 					</Button>
 				</Card.Body>

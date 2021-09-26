@@ -26,7 +26,7 @@ const Cart = (props) => {
 			<Table striped bordered hover>
 				<thead>
 					<tr>
-						<th> Name</th>
+						<th>Hired Programmers Name</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -35,8 +35,6 @@ const Cart = (props) => {
 					</tr>
 				</tbody>
 			</Table>
-
-			{/* <h5>Added programmers: {added}</h5> */}
 		</div>
 	);
 };

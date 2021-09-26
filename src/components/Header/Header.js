@@ -11,11 +11,12 @@ const Header = () => {
 
 			<nav>
 				<FontAwesomeIcon icon={faHome} className="icon" />
+
 				<a href="/orders">My Profile</a>
 				<a href="/About">About Us</a>
 			</nav>
 			<h1>Create Your Own Programming Team</h1>
-			<h3>Total Budget : 500 Million</h3>
+			<h3>Total Budget : $500 Million</h3>
 		</div>
 	);
 };

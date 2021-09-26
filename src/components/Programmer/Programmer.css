@@ -1,12 +1,13 @@
 .programmers:hover {
-	border-radius: 20px;
+	border-radius: 10x;
 	box-shadow: 5px 5px 10px gray;
 	background-color: #d6eef5;
 	border: 5px solid #000550;
+	cursor: pointer;
 }
-.programmers img {
+/* .programmers img {
 	width: 100%;
-}
+} */
 
 .hire-btn {
 	background-color: rgb(238, 184, 48);

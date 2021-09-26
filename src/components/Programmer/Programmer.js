@@ -1,26 +1,28 @@
+import { faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import Button from '@restart/ui/esm/Button';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Button } from 'react-bootstrap';
 import './Programmer.css';
 
 const Programmer = (props) => {
 	// console.log(props.programmer);
 	const { name, ProgrammerPhoto, position, demand, gender, done } = props.programmer;
+	const { handleAddToCart, programmer } = props;
 	// const gitIcon = <FontAwesomeIcon icon={faGithubAlt} />;
 
 	return (
 		<Col>
 			<Card className="programmers">
-				<Card.Img variant="top" src={ProgrammerPhoto} />
+				<Card.Img variant="top" src={ProgrammerPhoto} className="rounded-circle" style={{ height: '400px' }} />
 				<Card.Body>
 					<Card.Title>{name}</Card.Title>
 					<Card.Text>Job: {position} </Card.Text>
 					<Card.Text>Gender: {gender} </Card.Text>
-					<Card.Text>What he has done: {done} </Card.Text>
+					<Card.Text>Invention: {done} </Card.Text>
 					<Card.Text>Demand: ${demand} million </Card.Text>
 
-					<Button onClick={() => props.handleAddToCart(props.programmer)} className="hire-btn" variant="outline-secondary" size="sm">
-						Hire Now
+					<Button onClick={() => handleAddToCart(programmer)} variant="success" size="sm">
+						<FontAwesomeIcon icon={faHandsHelping}></FontAwesomeIcon> Hire Now
 					</Button>
 				</Card.Body>
 			</Card>

@@ -2,18 +2,3 @@
 	text-align: center;
 	margin-bottom: 50px;
 }
-.Programmer-container {
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-gap: 50px;
-}
-.search-container {
-	text-align: center;
-	line-height: 40px;
-	margin-bottom: 70px;
-	margin-left: 100px;
-	margin-right: 100px;
-}
-#butto-addon2n:hover {
-	background-color: bisque;
-}

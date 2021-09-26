@@ -1,4 +1,4 @@
-import { faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
@@ -8,21 +8,19 @@ const Programmer = (props) => {
 	// console.log(props.programmer);
 	const { name, ProgrammerPhoto, position, demand, gender, done } = props.programmer;
 	const { handleAddToCart, programmer } = props;
-	// const gitIcon = <FontAwesomeIcon icon={faGithubAlt} />;
 
 	return (
-		<Col>
-			<Card className="programmers">
-				<Card.Img variant="top" src={ProgrammerPhoto} className="rounded-circle" style={{ height: '400px' }} />
+		<Col className="Team">
+			<Card className="programmers card">
+				<Card.Img variant="top" src={ProgrammerPhoto} className=" Logo" />
 				<Card.Body>
 					<Card.Title>{name}</Card.Title>
 					<Card.Text>Job: {position} </Card.Text>
 					<Card.Text>Gender: {gender} </Card.Text>
 					<Card.Text>Invention: {done} </Card.Text>
 					<Card.Text>Demand: ${demand} million </Card.Text>
-
-					<Button onClick={() => handleAddToCart(programmer)} variant="success" size="sm">
-						<FontAwesomeIcon icon={faHandsHelping}></FontAwesomeIcon> Hire Now
+					<Button onClick={() => handleAddToCart(programmer)} variant="outline-success">
+						Hire Now <FontAwesomeIcon icon={faArrowAltCircleRight} />
 					</Button>
 				</Card.Body>
 			</Card>

@@ -25,7 +25,6 @@ const ProgrammersState = () => {
 				<h1>Create Your Own Programming Team</h1>
 				<h3>Total Budget : $500 Billion</h3>
 			</div>
-
 			<div>
 				<section className="text-center">
 					<Cart cart={cart}></Cart>

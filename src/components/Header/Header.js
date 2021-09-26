@@ -8,10 +8,8 @@ const Header = () => {
 	return (
 		<div className="header">
 			<img className="logo" src={logo} alt="" />
-
 			<nav>
 				<FontAwesomeIcon icon={faHome} className="icon" />
-
 				<a href="/orders">My Profile</a>
 				<a href="/About">About Us</a>
 			</nav>

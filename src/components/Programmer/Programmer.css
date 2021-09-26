@@ -5,18 +5,16 @@
 	border: 5px solid #000550;
 	cursor: pointer;
 }
-/* .programmers img {
-	width: 100%;
-} */
 
-.hire-btn {
-	background-color: rgb(238, 184, 48);
-	width: 150px;
-	height: 30px;
-	border: 1px solid gray;
-	border-radius: 5px;
-	cursor: pointer;
+.Team {
+	text-align: center;
+	padding: 20px;
 }
-.hire-btn:hover {
-	background-color: bisque;
+
+.Logo {
+	height: 200px;
+	width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

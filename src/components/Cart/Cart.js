@@ -7,9 +7,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 const Cart = (props) => {
 	// console.log(props.cart);
 	const totalProgrammer = props.cart;
-
 	const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
-
 	let total = 0;
 	for (const programmer of totalProgrammer) {
 		const { demand } = programmer;
@@ -17,7 +15,7 @@ const Cart = (props) => {
 	}
 
 	return (
-		<section>
+		<>
 			<h2>My Cart {cartIcon}</h2>
 			<hr />
 			<h4>Add Programmers: {totalProgrammer.length}</h4>
@@ -44,7 +42,7 @@ const Cart = (props) => {
 				);
 			})}
 			<h4>Total Amount: ${total} million</h4>
-		</section>
+		</>
 	);
 };
 

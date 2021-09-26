@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css';
 import { Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -21,17 +22,15 @@ const Cart = (props) => {
 			<h2>My Cart {cartIcon}</h2>
 			<hr />
 			<h4>Total Add: {props.cart.length}</h4>
-			<h4>total: ${total}</h4>
+			<h4>Total Amount: ${total} million</h4>
 			<Table striped bordered hover>
 				<thead>
 					<tr>
-						<th>id</th>
 						<th> Name</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>{id}</td>
 						<td>{added} </td>
 					</tr>
 				</tbody>
